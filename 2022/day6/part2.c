@@ -42,7 +42,7 @@ int main(void)
     while (fgets(line, sizeof(line), f) != NULL)
     {
         int begin = 0;
-        end = 3;
+        end = 13;
 
         while (line[end] != '\n' && !IsConsecutive(line, begin, end))
         {

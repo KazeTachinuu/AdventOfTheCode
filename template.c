@@ -1,19 +1,20 @@
 #include <stdio.h>
 #include <stdlib.h>
 
-
-int lenstr(char *line)
+/*!
+ * Copy the line without the \n at the end
+ *
+ * param line Current line of the input
+ */
+void Strip(char *line)
 {
     int i = 0;
-    while (line[i] != '\0' && line[i] != '\n')
+    while (line[i] != '\n')
     {
         i++;
     }
-    return i;
+    line[i] = '\0';
 }
-
-
-
 
 int main(void)
 {
@@ -23,7 +24,7 @@ int main(void)
     int var = 0;
     while (fgets(line, sizeof(line), f) != NULL)
     {
-        
+
     }
     printf("%d\n", var);
 

@@ -35,7 +35,7 @@ int main(void)
     }
 
     // Calculate for the rest of the input
-    while (fgets(line, sizeof(line), f) != NULL)
+    while (fgets(line, sizeof(line), f))
     {
         int current = atoi(line);
 

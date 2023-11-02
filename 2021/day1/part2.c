@@ -12,7 +12,7 @@ int main(void)
     int count = 0;
     int mod = 0;
 
-    //Initialize Data
+    // Initialize Data
     while (mod < 3)
     {
         fgets(line, sizeof(line), f);
@@ -34,7 +34,7 @@ int main(void)
         mod++;
     }
 
-    //Calculate for the rest of the input
+    // Calculate for the rest of the input
     while (fgets(line, sizeof(line), f) != NULL)
     {
         int current = atoi(line);

@@ -22,7 +22,7 @@ int main(void)
 
     char line[300];
     int var = 0;
-    while (fgets(line, sizeof(line), f) != NULL)
+    while (fgets(line, sizeof(line), f))
     {
 
     }

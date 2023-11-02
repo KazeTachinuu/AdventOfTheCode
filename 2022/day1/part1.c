@@ -1,25 +1,6 @@
+#include <ctype.h>
 #include <stdio.h>
 #include <stdlib.h>
-#include <ctype.h>
-
-int isBlank (char * line)
-{
-  char * ch;
-  int is_blank = -1;
-
-  // Iterate through each character.
-  for (ch = line; *ch != '\0'; ++ch)
-  {
-    if (!isspace(*ch))
-    {
-      // Found a non-whitespace character.
-      is_blank = 0;
-      break;
-    }
-  }
-
-  return is_blank;
-}
 
 int main(void)
 {
@@ -28,9 +9,9 @@ int main(void)
     char line[100];
     int max = 0;
     int curr = 0;
-    while (fgets(line, sizeof(line), f) != NULL)
+    while (fgets(line, sizeof(line), f))
     {
-        if (isBlank(line))
+        if (line[0] == '\n')
         {
             max = curr > max ? curr : max;
             curr = 0;

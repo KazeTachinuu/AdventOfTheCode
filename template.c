@@ -12,7 +12,7 @@ int atoi(char *line)
     }
     while (line[i] != '\n')
     {
-        res = res * 10 + line[i] - '0';
+        res = res * 10 + line[i++] - '0';
     }
     return res * sign;
 }

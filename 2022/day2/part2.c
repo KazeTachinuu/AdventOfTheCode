@@ -28,7 +28,7 @@ int CalculateScore(char *line)
 
 int main(void)
 {
-    FILE *f = fopen("input", "r");
+    FILE *f = fopen("inputs/2", "r");
 
     char line[100];
     int score = 0;

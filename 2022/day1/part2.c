@@ -1,10 +1,8 @@
-#include <ctype.h>
-#include <stdio.h>
-#include <stdlib.h>
+#include "../template.h"
 
 int main(void)
 {
-    FILE *f = fopen("input", "r");
+    FILE *f = fopen("inputs/1", "r");
 
     char line[100];
     int max = 0;

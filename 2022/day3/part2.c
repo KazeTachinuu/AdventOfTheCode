@@ -1,5 +1,4 @@
 #include <stdio.h>
-#include <stdlib.h>
 
 int Contains(char c, char *part2, char *part3)
 {
@@ -51,7 +50,7 @@ void Inject(char *line, char *lines)
 
 int main(void)
 {
-    FILE *f = fopen("input", "r");
+    FILE *f = fopen("inputs/3", "r");
 
     char line[300];
     int sum = 0;

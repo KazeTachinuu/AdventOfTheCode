@@ -1,19 +1,8 @@
-#include <stdio.h>
-#include <stdlib.h>
-
-int lenstr(char *line)
-{
-    int i = 0;
-    while (line[i] != '\0' && line[i] != '\n')
-    {
-        i++;
-    }
-    return i;
-}
+#include "../template.h"
 
 int main(void)
 {
-    FILE *f = fopen("input", "r");
+    FILE *f = fopen("inputs/4", "r");
 
     char line[100];
     int count = 0;

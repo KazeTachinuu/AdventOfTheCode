@@ -1,6 +1,4 @@
-#include <ctype.h>
 #include <stdio.h>
-#include <stdlib.h>
 
 int Contains(char c, char *line)
 {
@@ -32,7 +30,7 @@ int CalculatePriority(char c)
 
 int main(void)
 {
-    FILE *f = fopen("input", "r");
+    FILE *f = fopen("inputs/3", "r");
 
     char line[100];
     int sum = 0;

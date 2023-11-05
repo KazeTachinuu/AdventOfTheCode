@@ -14,8 +14,10 @@ int atoi(char *line)
         sign = -1;
         line++;
     }
+    if (*line == '0')
+        line++;
 
-    while (*line != '\n')
+    while (*line != '\n' && *line != '\0')
     {
         res = 10 * res + *line++ - '0';
     }
